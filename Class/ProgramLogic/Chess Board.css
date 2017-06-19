@@ -1,0 +1,22 @@
+body {
+    background: #CCCCCC;
+}
+.chessboard {
+    border: 2px solid white;
+    display: inline-block;
+}
+div {
+
+}
+span {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+
+.black {
+    background: black;
+}
+.white {
+    background: white;
+}

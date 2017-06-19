@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subtraction</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrapper">
+    <input type="text" id="firstNumber" value="13.33" disabled>
+    <input type="text" id="secondNumber" value="22.18" disabled>
+
+    <div id="result"></div>
+</div>
+<script>
+    window.onload = function () {
+        subtract();
+    };
+//    function subtract() {
+//        let val1 = document.getElementById('firstNumber').value;
+//        let val2 = document.getElementById('secondNumber').value;
+//        let result = Number(val1) - Number(val2);
+//        document.getElementById('result').textContent = result;
+//    }
+
+//    function subtract() {
+//        let val = document.getElementsByTagName('input');
+//        let val0 = val[0].value;
+//        let val1 = val[1].value;
+//        let sub = val0 - val1;
+//        document.getElementById('result').textContent = sub;
+//    }
+
+    function subtract() {
+        let num1 = $('#firstNumber');
+        let num2 = $('#secondNumber');
+        let resultDiv = $('#result');
+        let result = parseFloat(num1.val()) - parseFloat(num2.val());
+        resultDiv[0].textContent = result;
+    }
+</script>
+</body>
+</html>
